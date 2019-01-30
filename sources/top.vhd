@@ -169,5 +169,4 @@ u5: char_rom port map(display => displayy,
                       userlevel => userlevell,
                       mp1 =>mp1, mp2 =>mp2, mp3 =>mp3,
                       selectchar11 => selectchar11, selectchar12 => selectchar12, selectchar21 => selectchar21, selectchar22 => selectchar22, selectchar31 => selectchar31, selectchar32 => selectchar32);
-
 end Behavioral;
