@@ -23,9 +23,9 @@ end component;
 component trigger is port (eoc_clock: in std_logic;
                            xlevel : out std_logic_vector(9 downto 0); -- goes to display 
                            ylevel : out std_logic_vector(8 downto 0); -- goes to display 
-                           datain : in std_logic_vector(8 downto 0); -- comes from ramex
-                           trig_level : in integer; -- comes from keyboard 
-                           read_address : inout std_logic_vector(11 downto 0));-- goes to ramex
+                           datain : in std_logic_vector(8 downto 0); -- comes from ram
+                           trig_level : in integer; 
+                           read_address : inout std_logic_vector(11 downto 0));-- goes to ram
 
 end component; 
                          
@@ -149,11 +149,6 @@ u8: bintodec port map (reading => reading,
                        selectchar22 => selectchar22, 
                        selectchar31 => selectchar31, 
                        selectchar32 => selectchar32);
-                         
-u11: keyboard port map(ps2_clk => ps2_clk,
-                       ps2_data => ps2_data,
-                       clk => halfclock,
-                       userlevel => trig_level); --userlevell
                          
 u4: Vga1 port map(clk => clk_signal, 
                   Rin => Rin,
