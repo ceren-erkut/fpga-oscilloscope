@@ -1,14 +1,19 @@
 library IEEE;
-use IEEE.STD_LOGIC_1164.ALL; use IEEE.std_logic_unsigned.all;
+use IEEE.STD_LOGIC_1164.ALL; 
+use IEEE.std_logic_unsigned.all;
+
 entity Top is
-Port ( clk : in STD_LOGIC;
-clockout : out STD_LOGIC;
-adc : in std_logic_vector(1 downto 0); Hsync, Vsync : out std_logic;
-led : out std_logic_vector(15 downto 0);
-ps2_clk : IN STD_LOGIC;
-ps2_data : IN STD_LOGIC;
-vgaR, vgaB, vgaG : out std_logic_vector(3 downto 0));
+
+Port (clk : in STD_LOGIC;
+      clockout : out STD_LOGIC;
+      adc : in std_logic_vector(1 downto 0); 
+      Hsync, Vsync : out std_logic;
+      led : out std_logic_vector(15 downto 0);
+      ps2_clk : IN STD_LOGIC;
+      ps2_data : IN STD_LOGIC;
+      vgaR, vgaB, vgaG : out std_logic_vector(3 downto 0));
 end Top;
+
 architecture Behavioral of Top is
 component clk_div is Port (
 clkin : in std_logic;
