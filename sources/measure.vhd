@@ -18,7 +18,6 @@ begin
   
 process(clk) 
 begin
-
   if rising_edge(clk) then
     if to_integer(signed(adcin)) < minn then
       minn <= to_integer(signed(adcin));
