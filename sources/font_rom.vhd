@@ -514,6 +514,490 @@ constant plussign : char_rom2 :=( ('0','0','0','0','0','0','0','0','0','0','0','
   ('0','0','0','0','0','0','1','1','1','1','0','0','0','0','0','0'), -- 5 **
   ('0','0','0','0','0','0','1','1','1','1','0','0','0','0','0','0'), -- 5 ** 
   ('0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0'), -- c 
-  ('0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0'), -- c ('0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0'), -- c ('0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0'), -- c ('0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0'), -- c ('0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0'), -- c ('0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0'), -- c ('0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0'), -- c ('0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0'), -- c ('0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0'), -- c ('0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0'), -- c ('0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0'));
-constant minussign : char_rom2 :=( ('0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0'), -- c ('0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0'), -- c ('0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0'), -- c ('0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0'), -- c ('0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0'), -- c ('0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0'), -- c ('0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0'), -- c ('0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0'), -- c ('0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0'), -- c ('0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0'), -- c ('0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0'), -- c ('0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0'), -- c ('0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0'), -- c ('0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0'), -- c ('0','0','1','1','1','1','1','1','1','1','1','1','1','1','0','0'), -- 7 ****** ('0','0','1','1','1','1','1','1','1','1','1','1','1','1','0','0'), -- 7 ****** ('0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0'), -- c ('0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0'), -- c ('0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0'), -- c ('0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0'), -- c ('0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0'), -- c ('0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0'), -- c ('0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0'), -- c ('0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0'), -- c ('0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0'), -- c ('0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0'), -- c ('0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0'), -- c ('0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0'), -- c ('0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0'), -- c ('0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0'), -- c ('0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0'), -- c ('0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0'));
+  ('0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0'), -- c 
+  ('0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0'), -- c 
+  ('0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0'), -- c 
+  ('0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0'), -- c 
+  ('0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0'), -- c 
+  ('0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0'), -- c 
+  ('0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0'), -- c 
+  ('0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0'), -- c 
+  ('0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0'), -- c 
+  ('0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0'), -- c 
+  ('0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0'));
+
+constant minussign : char_rom2 :=( ('0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0'), -- c 
+  ('0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0'), -- c 
+  ('0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0'), -- c 
+  ('0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0'), -- c 
+  ('0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0'), -- c 
+  ('0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0'), -- c 
+  ('0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0'), -- c 
+  ('0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0'), -- c 
+  ('0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0'), -- c 
+  ('0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0'), -- c 
+  ('0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0'), -- c 
+  ('0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0'), -- c 
+  ('0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0'), -- c 
+  ('0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0'), -- c 
+  ('0','0','1','1','1','1','1','1','1','1','1','1','1','1','0','0'), -- 7 ****** 
+  ('0','0','1','1','1','1','1','1','1','1','1','1','1','1','0','0'), -- 7 ****** 
+  ('0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0'), -- c 
+  ('0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0'), -- c 
+  ('0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0'), -- c 
+  ('0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0'), -- c 
+  ('0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0'), -- c 
+  ('0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0'), -- c 
+  ('0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0'), -- c 
+  ('0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0'), -- c 
+  ('0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0'), -- c 
+  ('0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0'), -- c 
+  ('0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0'), -- c 
+  ('0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0'), -- c 
+  ('0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0'), -- c 
+  ('0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0'), -- c 
+  ('0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0'), -- c 
+  ('0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0'));
+
+signal userlevell : integer; 
+
+begin
+  
+userlevell <= userlevel; 
+
+process (halfclock)
+  
+variable pixelX : integer := to_integer(unsigned(pixel_X)); 
+variable pixelY : integer := to_integer(unsigned(pixel_Y));
+constant dxl : integer := 300; constant dxh : integer := 742;
+constant dyl : integer := 170; constant dyh : integer := 566;
+
+begin
+  rin <= "1100";
+  gin <= "1100"; bin <= "0000";
+  if(rising_edge(Halfclock)) then
+    if(pixel_x > 173 and pixel_x < 189 and pixel_y > 5 and pixel_y < 37) then ---- 0 for Vpp
+      if(number0(Pixely - 6,pixelx - 174) = '1') then 
+        rin <= "1100"; gin <= "0000"; bin <= "1100"; 
+      else
+        rin <= "0000"; gin <= "0000"; bin <= "0000";
+      end if;
+    elsif(pixel_x > 194 and pixel_x < 210 and pixel_y > 5 and pixel_y < 37) then ---- . for Vpp
+      if(dotsign(Pixely - 6,pixelx - 195) = '1') then 
+        rin <= "1100"; gin <= "0000"; bin <= "1100";
+      else
+        rin <= "0000"; gin <= "0000"; bin <= "0000";
+      end if;
+------------------ 1. digit Vpp
+    elsif(pixel_x > 215 and pixel_x < 231 and pixel_y > 5 and pixel_y < 37) then -- 1st digit for vpp
+      if selectchar11 = 0 then
+        if(number0(Pixely - 6,pixelx - 216) = '1') then --- PixelY- 401,pixelX-161, size of image is 401 and 161 
+          rin <= "1100"; gin <= "0000"; bin <= "1100"; 
+        else
+          rin <= "0000"; gin <= "0000"; bin <= "0000"; 
+        end if;
+      elsif selectchar11 = 1 then
+        if(number1(Pixely - 6,pixelx - 216) = '1') then --- PixelY- 401,pixelX-161, size of image is 401 and 161 
+          rin <= "1100"; gin <= "0000"; bin <= "1100"; 
+        else
+          rin <= "0000"; gin <= "0000"; bin <= "0000"; 
+        end if;
+      elsif selectchar11 = 2 then
+        if(number2(Pixely - 6,pixelx - 216) = '1') then --- PixelY- 401,pixelX-161, size of image is 401and 161 
+          rin <= "1100";gin <= "0000"; bin <= "1100"; 
+        else
+          rin <= "0000"; gin <= "0000"; bin <= "0000"; 
+        end if;
+      elsif selectchar11 = 3 then
+        if(number3(Pixely - 6,pixelx - 216) = '1') then --- PixelY- 401,pixelX-161, size of image is 401and 161 
+          rin <= "1100";gin <= "0000"; bin <= "1100"; 
+        else
+          rin <= "0000"; gin <= "0000";bin <= "0000";
+        end if;
+      elsif selectchar11 = 4 then
+        if(number4(Pixely - 6,pixelx - 216) = '1') then --- PixelY- 401,pixelX-161, size of image is 401 and 161
+          rin <= "1100"; gin <= "0000"; bin <= "1100"; 
+        else
+          rin <= "0000"; gin <= "0000"; bin <= "0000"; 
+        end if;
+      elsif selectchar11 = 5 then
+        if(number5(Pixely - 6,pixelx - 216) = '1') then --- PixelY- 401,pixelX-161, size of image is 401and 161 
+          rin <= "1100";gin <= "0000"; bin <= "1100"; 
+        else
+          rin <= "0000"; gin <= "0000"; bin <= "0000"; 
+        end if;
+      elsif selectchar11 = 6 then
+        if(number6(Pixely - 6,pixelx - 216) = '1') then --- PixelY- 401,pixelX-161, size of image is 401and 161
+          rin <= "1100";gin <= "0000"; bin <= "1100"; 
+        else
+          rin <= "0000"; gin <= "0000"; bin <= "0000"; 
+        end if;
+      elsif selectchar11 = 7 then
+        if(number7(Pixely - 6,pixelx - 216) = '1') then --- PixelY- 401,pixelX-161, size of image is 401and 161 
+          rin <= "1100";gin <= "0000"; bin <= "1100"; 
+        else
+          rin <= "0000"; gin <= "0000"; bin <= "0000"; 
+        end if;
+      elsif selectchar11 = 8 then
+        if(number8(Pixely - 6,pixelx - 216) = '1') then --- PixelY- 401,pixelX-161, size of image is 401 and 161
+          rin <= "1100"; gin <= "0000"; bin <= "1100"; else
+rin <= "0000"; gin <= "0000"; bin <= "0000"; end if;
+elsif selectchar11 = 9 then
+if(number9(Pixely - 6,pixelx - 216) = '1') then --- PixelY- 401,pixelX-161, size of image is 401
+and 161 | kendi i�inde iterasyon i�in rin <= "1100";
+gin <= "0000"; bin <= "1100"; else
+rin <= "0000"; gin <= "0000"; bin <= "0000"; end if;
+end if;
+---------------------------------- ilk say� 2. digit
+elsif(pixel_x > 236 and pixel_x < 252 and pixel_y > 5 and pixel_y < 37) then -- 1st digit for vpp if selectchar12 = 0 then
+if(number0(Pixely - 6,pixelx - 237) = '1') then --- PixelY- 401,pixelX-161, size of image is 401 and 161 | kendi i�inde iterasyon i�in
+rin <= "1100"; gin <= "0000"; bin <= "1100"; else
+rin <= "0000"; gin <= "0000"; bin <= "0000"; end if;
+elsif selectchar12 = 1 then
+if(number1(Pixely - 6,pixelx - 237) = '1') then --- PixelY- 401,pixelX-161, size of image is 401
+and 161 | kendi i�inde iterasyon i�in rin <= "1100";
+gin <= "0000"; bin <= "1100"; else
+rin <= "0000"; gin <= "0000"; bin <= "0000"; end if;
+elsif selectchar12 = 2 then
+if(number2(Pixely - 6,pixelx - 237) = '1') then --- PixelY- 401,pixelX-161, size of image is 401
+and 161 | kendi i�inde iterasyon i�in rin <= "1100";
+gin <= "0000"; bin <= "1100";
+else
+rin <= "0000"; gin <= "0000"; bin <= "0000"; end if;
+elsif selectchar12 = 3 then
+if(number3(Pixely - 6,pixelx - 237) = '1') then --- PixelY- 401,pixelX-161, size of image is 401
+and 161 | kendi i�inde iterasyon i�in rin <= "1100";
+gin <= "0000"; bin <= "1100"; else
+rin <= "0000"; gin <= "0000"; bin <= "0000"; end if;
+elsif selectchar12 = 4 then
+if(number4(Pixely - 6,pixelx - 237) = '1') then --- PixelY- 401,pixelX-161, size of image is 401
+and 161 | kendi i�inde iterasyon i�in rin <= "1100";
+gin <= "0000"; bin <= "1100"; else
+rin <= "0000"; gin <= "0000"; bin <= "0000"; end if;
+elsif selectchar12 = 5 then
+if(number5(Pixely - 6,pixelx - 237) = '1') then --- PixelY- 401,pixelX-161, size of image is 401
+and 161 | kendi i�inde iterasyon i�in rin <= "1100";
+gin <= "0000"; bin <= "1100"; else
+rin <= "0000"; gin <= "0000"; bin <= "0000"; end if;
+elsif selectchar12 = 6 then
+if(number6(Pixely - 6,pixelx - 237) = '1') then --- PixelY- 401,pixelX-161, size of image is 401
+and 161 | kendi i�inde iterasyon i�in rin <= "1100";
+gin <= "0000"; bin <= "1100"; else
+rin <= "0000"; gin <= "0000"; bin <= "0000"; end if;
+elsif selectchar12 = 7 then
+
+if(number7(Pixely - 6,pixelx - 237) = '1') then --- PixelY- 401,pixelX-161, size of image is 401 and 161 | kendi i�inde iterasyon i�in
+rin <= "1100"; gin <= "0000"; bin <= "1100"; else
+rin <= "0000"; gin <= "0000"; bin <= "0000"; end if;
+elsif selectchar12 = 8 then
+if(number8(Pixely - 6,pixelx - 237) = '1') then --- PixelY- 401,pixelX-161, size of image is 401
+and 161 | kendi i�inde iterasyon i�in rin <= "1100";
+gin <= "0000"; bin <= "1100"; else
+rin <= "0000"; gin <= "0000"; bin <= "0000"; end if;
+elsif selectchar12 = 9 then
+if(number9(Pixely - 6,pixelx - 237) = '1') then --- PixelY- 401,pixelX-161, size of image is 401
+and 161 | kendi i�inde iterasyon i�in rin <= "1100";
+gin <= "0000"; bin <= "1100"; else
+rin <= "0000"; gin <= "0000"; bin <= "0000"; end if;
+end if;
+elsif(pixel_x > 257 and pixel_x < 273 and pixel_y > 5 and pixel_y < 37) then -- 1st digit for vpp
+if mp1 = '0' then -- minus
+if(minussign(Pixely - 6,pixelx - 258) = '1') then --- PixelY- 401,pixelX-161, size of image is 401
+and 161 | kendi i�inde iterasyon i�in rin <= "1100";
+gin <= "0000"; bin <= "1100"; else
+rin <= "0000"; gin <= "0000"; bin <= "0000"; end if;
+else
+if(plussign(Pixely - 6,pixelx - 258) = '1') then --- PixelY- 401,pixelX-161, size of image is 401
+and 161 | kendi i�inde iterasyon i�in rin <= "1100";
+
+gin <= "0000"; bin <= "1100"; else
+rin <= "0000"; gin <= "0000"; bin <= "0000"; end if;
+end if;
+----------------- 2. say�
+elsif(pixel_x > 413 and pixel_x < 429 and pixel_y > 5 and pixel_y < 37) then ---- 0 for Vpp if(number0(Pixely - 6,pixelx - 414) = '1') then --- PixelY- 401,pixelX-161, size of image is 401
+and 161 | kendi i�inde iterasyon i�in rin <= "1100";
+gin <= "0000"; bin <= "1100"; else
+rin <= "0000"; gin <= "0000"; bin <= "0000";
+end if;
+elsif(pixel_x > 434 and pixel_x < 450 and pixel_y > 5 and pixel_y < 37) then ---- . for Vpp
+if(dotsign(Pixely - 6,pixelx - 435) = '1') then --- PixelY- 401,pixelX-161, size of image is 401 and 161 | kendi i�inde iterasyon i�in
+rin <= "1100"; gin <= "0000"; bin <= "1100"; else
+rin <= "0000"; gin <= "0000"; bin <= "0000";
+end if;
+------------------ 1. digit Vmax
+elsif(pixel_x > 455 and pixel_x < 471 and pixel_y > 5 and pixel_y < 37) then -- 1st digit for vpp
+if selectchar21 = 0 then
+if(number0(Pixely - 6,pixelx - 456) = '1') then --- PixelY- 401,pixelX-161, size of image is 401
+and 161 | kendi i�inde iterasyon i�in rin <= "1100";
+gin <= "0000"; bin <= "1100"; else
+rin <= "0000"; gin <= "0000"; bin <= "0000"; end if;
+elsif selectchar11 = 1 then
+if(number1(Pixely - 6,pixelx - 456) = '1') then --- PixelY- 401,pixelX-161, size of image is 401
+and 161 | kendi i�inde iterasyon i�in rin <= "1100";
+gin <= "0000";
+
+bin <= "1100"; else
+rin <= "0000"; gin <= "0000"; bin <= "0000"; end if;
+elsif selectchar21 = 2 then
+if(number2(Pixely - 6,pixelx - 456) = '1') then --- PixelY- 401,pixelX-161, size of image is 401
+and 161 | kendi i�inde iterasyon i�in rin <= "1100";
+gin <= "0000"; bin <= "1100"; else
+rin <= "0000"; gin <= "0000"; bin <= "0000"; end if;
+elsif selectchar21 = 3 then
+if(number3(Pixely - 6,pixelx - 456) = '1') then --- PixelY- 401,pixelX-161, size of image is 401
+and 161 | kendi i�inde iterasyon i�in rin <= "1100";
+gin <= "0000"; bin <= "1100"; else
+rin <= "0000"; gin <= "0000"; bin <= "0000"; end if;
+elsif selectchar21 = 4 then
+if(number4(Pixely - 6,pixelx - 456) = '1') then --- PixelY- 401,pixelX-161, size of image is 401
+and 161 | kendi i�inde iterasyon i�in rin <= "1100";
+gin <= "0000"; bin <= "1100"; else
+rin <= "0000"; gin <= "0000"; bin <= "0000"; end if;
+elsif selectchar21 = 5 then
+if(number5(Pixely - 6,pixelx - 456) = '1') then --- PixelY- 401,pixelX-161, size of image is 401
+and 161 | kendi i�inde iterasyon i�in rin <= "1100";
+gin <= "0000"; bin <= "1100"; else
+rin <= "0000"; gin <= "0000"; bin <= "0000"; end if;
+
+elsif selectchar21 = 6 then
+if(number6(Pixely - 6,pixelx - 456) = '1') then --- PixelY- 401,pixelX-161, size of image is 401
+and 161 | kendi i�inde iterasyon i�in rin <= "1100";
+gin <= "0000"; bin <= "1100"; else
+rin <= "0000"; gin <= "0000"; bin <= "0000"; end if;
+elsif selectchar21 = 7 then
+if(number7(Pixely - 6,pixelx - 456) = '1') then --- PixelY- 401,pixelX-161, size of image is 401
+and 161 | kendi i�inde iterasyon i�in rin <= "1100";
+gin <= "0000"; bin <= "1100"; else
+rin <= "0000"; gin <= "0000"; bin <= "0000"; end if;
+elsif selectchar21 = 8 then
+if(number8(Pixely - 6,pixelx - 456) = '1') then --- PixelY- 401,pixelX-161, size of image is 401
+and 161 | kendi i�inde iterasyon i�in rin <= "1100";
+gin <= "0000"; bin <= "1100"; else
+rin <= "0000"; gin <= "0000"; bin <= "0000"; end if;
+elsif selectchar21 = 9 then
+if(number9(Pixely - 6,pixelx - 456) = '1') then --- PixelY- 401,pixelX-161, size of image is 401
+and 161 | kendi i�inde iterasyon i�in rin <= "1100";
+gin <= "0000"; bin <= "1100"; else
+rin <= "0000"; gin <= "0000"; bin <= "0000"; end if;
+end if;
+---------------------------------- 2. digit Vmax
+elsif(pixel_x > 476 and pixel_x < 492 and pixel_y > 5 and pixel_y < 37) then -- 1st digit for vpp if selectchar22 = 0 then
+
+if(number0(Pixely - 6,pixelx - 477) = '1') then --- PixelY- 401,pixelX-161, size of image is 401 and 161 | kendi i�inde iterasyon i�in
+rin <= "1100"; gin <= "0000"; bin <= "1100"; else
+rin <= "0000"; gin <= "0000"; bin <= "0000"; end if;
+elsif selectchar22 = 1 then
+if(number1(Pixely - 6,pixelx - 477) = '1') then --- PixelY- 401,pixelX-161, size of image is 401
+and 161 | kendi i�inde iterasyon i�in rin <= "1100";
+gin <= "0000"; bin <= "1100"; else
+rin <= "0000"; gin <= "0000"; bin <= "0000"; end if;
+elsif selectchar22 = 2 then
+if(number2(Pixely - 6,pixelx - 477) = '1') then --- PixelY- 401,pixelX-161, size of image is 401
+and 161 | kendi i�inde iterasyon i�in rin <= "1100";
+gin <= "0000"; bin <= "1100"; else
+rin <= "0000"; gin <= "0000"; bin <= "0000"; end if;
+elsif selectchar22 = 3 then
+if(number3(Pixely - 6,pixelx - 477) = '1') then --- PixelY- 401,pixelX-161, size of image is 401
+and 161 | kendi i�inde iterasyon i�in rin <= "1100";
+gin <= "0000"; bin <= "1100"; else
+rin <= "0000"; gin <= "0000"; bin <= "0000"; end if;
+elsif selectchar22 = 4 then
+if(number4(Pixely - 6,pixelx - 477) = '1') then --- PixelY- 401,pixelX-161, size of image is 401
+and 161 | kendi i�inde iterasyon i�in rin <= "1100";
+gin <= "0000"; bin <= "1100"; else
+
+rin <= "0000"; gin <= "0000"; bin <= "0000"; end if;
+elsif selectchar22 = 5 then
+if(number5(Pixely - 6,pixelx - 477) = '1') then --- PixelY- 401,pixelX-161, size of image is 401
+and 161 | kendi i�inde iterasyon i�in rin <= "1100";
+gin <= "0000"; bin <= "1100"; else
+rin <= "0000"; gin <= "0000"; bin <= "0000"; end if;
+elsif selectchar22 = 6 then
+if(number6(Pixely - 6,pixelx - 477) = '1') then --- PixelY- 401,pixelX-161, size of image is 401
+and 161 | kendi i�inde iterasyon i�in rin <= "1100";
+gin <= "0000"; bin <= "1100"; else
+rin <= "0000"; gin <= "0000"; bin <= "0000"; end if;
+elsif selectchar22 = 7 then
+if(number7(Pixely - 6,pixelx - 477) = '1') then --- PixelY- 401,pixelX-161, size of image is 401
+and 161 | kendi i�inde iterasyon i�in rin <= "1100";
+gin <= "0000"; bin <= "1100"; else
+rin <= "0000"; gin <= "0000"; bin <= "0000"; end if;
+elsif selectchar22 = 8 then
+if(number8(Pixely - 6,pixelx - 477) = '1') then --- PixelY- 401,pixelX-161, size of image is 401
+and 161 | kendi i�inde iterasyon i�in rin <= "1100";
+gin <= "0000"; bin <= "1100"; else
+rin <= "0000"; gin <= "0000"; bin <= "0000"; end if;
+elsif selectchar22 = 9 then
+
+if(number9(Pixely - 6,pixelx - 477) = '1') then --- PixelY- 401,pixelX-161, size of image is 401 and 161 | kendi i�inde iterasyon i�in
+rin <= "1100"; gin <= "0000"; bin <= "1100"; else
+rin <= "0000"; gin <= "0000"; bin <= "0000"; end if;
+end if;
+elsif(pixel_x > 497 and pixel_x < 513 and pixel_y > 5 and pixel_y < 37) then -- 1st digit for vpp
+if mp2 = '0' then -- minus
+if(minussign(Pixely - 6,pixelx - 498) = '1') then --- PixelY- 401,pixelX-161, size of image is 401
+and 161 | kendi i�inde iterasyon i�in rin <= "1100";
+gin <= "0000"; bin <= "1100"; else
+rin <= "0000"; gin <= "0000"; bin <= "0000"; end if;
+else
+if(plussign(Pixely - 6,pixelx - 738) = '1') then --- PixelY- 401,pixelX-161, size of image is 401
+and 161 | kendi i�inde iterasyon i�in rin <= "1100";
+gin <= "0000"; bin <= "1100"; else
+rin <= "0000"; gin <= "0000"; bin <= "0000"; end if;
+end if; -------------------------------------- 3. say�
+elsif(pixel_x > 653 and pixel_x < 669 and pixel_y > 5 and pixel_y < 37) then ---- 0 for Vpp if(number0(Pixely - 6,pixelx - 654) = '1') then --- PixelY- 401,pixelX-161, size of image is 401
+and 161 | kendi i�inde iterasyon i�in rin <= "1100";
+gin <= "0000"; bin <= "1100"; else
+rin <= "0000"; gin <= "0000"; bin <= "0000";
+end if;
+elsif(pixel_x > 674 and pixel_x < 690 and pixel_y > 5 and pixel_y < 37) then ---- . for Vpp
+
+if(dotsign(Pixely - 6,pixelx - 675) = '1') then --- PixelY- 401,pixelX-161, size of image is 401 and 161 | kendi i�inde iterasyon i�in
+rin <= "1100"; gin <= "0000"; bin <= "1100"; else
+rin <= "0000"; gin <= "0000"; bin <= "0000";
+end if;
+------------------ 1. digit Vmax
+elsif(pixel_x > 695 and pixel_x < 711 and pixel_y > 5 and pixel_y < 37) then -- 1st digit for vpp
+if selectchar31 = 0 then
+if(number0(Pixely - 6,pixelx - 696) = '1') then --- PixelY- 401,pixelX-161, size of image is 401
+and 161 | kendi i�inde iterasyon i�in rin <= "1100";
+gin <= "0000"; bin <= "1100"; else
+rin <= "0000"; gin <= "0000"; bin <= "0000"; end if;
+elsif selectchar31 = 1 then
+if(number1(Pixely - 6,pixelx - 696) = '1') then --- PixelY- 401,pixelX-161, size of image is 401
+and 161 | kendi i�inde iterasyon i�in rin <= "1100";
+gin <= "0000"; bin <= "1100"; else
+rin <= "0000"; gin <= "0000"; bin <= "0000"; end if;
+elsif selectchar31 = 2 then
+if(number2(Pixely - 6,pixelx - 696) = '1') then --- PixelY- 401,pixelX-161, size of image is 401
+and 161 | kendi i�inde iterasyon i�in rin <= "1100";
+gin <= "0000"; bin <= "1100"; else
+rin <= "0000"; gin <= "0000"; bin <= "0000"; end if;
+elsif selectchar31 = 3 then
+if(number3(Pixely - 6,pixelx - 696) = '1') then --- PixelY- 401,pixelX-161, size of image is 401
+and 161 | kendi i�inde iterasyon i�in rin <= "1100";
+gin <= "0000";
+
+bin <= "1100"; else
+rin <= "0000"; gin <= "0000"; bin <= "0000"; end if;
+elsif selectchar31 = 4 then
+if(number4(Pixely - 6,pixelx - 696) = '1') then --- PixelY- 401,pixelX-161, size of image is 401
+and 161 | kendi i�inde iterasyon i�in rin <= "1100";
+gin <= "0000"; bin <= "1100"; else
+rin <= "0000"; gin <= "0000"; bin <= "0000"; end if;
+elsif selectchar31 = 5 then
+if(number5(Pixely - 6,pixelx - 696) = '1') then --- PixelY- 401,pixelX-161, size of image is 401
+and 161 | kendi i�inde iterasyon i�in rin <= "1100";
+gin <= "0000"; bin <= "1100"; else
+rin <= "0000"; gin <= "0000"; bin <= "0000"; end if;
+elsif selectchar31 = 6 then
+if(number6(Pixely - 6,pixelx - 696) = '1') then --- PixelY- 401,pixelX-161, size of image is 401
+and 161 | kendi i�inde iterasyon i�in rin <= "1100";
+gin <= "0000"; bin <= "1100"; else
+rin <= "0000"; gin <= "0000"; bin <= "0000"; end if;
+elsif selectchar31 = 7 then
+if(number7(Pixely - 6,pixelx - 696) = '1') then --- PixelY- 401,pixelX-161, size of image is 401
+and 161 | kendi i�inde iterasyon i�in rin <= "1100";
+gin <= "0000"; bin <= "1100"; else
+rin <= "0000"; gin <= "0000"; bin <= "0000"; end if;
+
+elsif selectchar31 = 8 then
+if(number8(Pixely - 6,pixelx - 696) = '1') then --- PixelY- 401,pixelX-161, size of image is 401
+and 161 | kendi i�inde iterasyon i�in rin <= "1100";
+gin <= "0000"; bin <= "1100"; else
+rin <= "0000"; gin <= "0000"; bin <= "0000"; end if;
+elsif selectchar31 = 9 then
+if(number9(Pixely - 6,pixelx - 696) = '1') then --- PixelY- 401,pixelX-161, size of image is 401
+and 161 | kendi i�inde iterasyon i�in rin <= "1100";
+gin <= "0000"; bin <= "1100"; else
+rin <= "0000"; gin <= "0000"; bin <= "0000"; end if;
+end if;
+---------------------------------- 2. digit Vmin
+elsif(pixel_x > 716 and pixel_x < 732 and pixel_y > 5 and pixel_y < 37) then -- 1st digit for vpp if selectchar32 = 0 then
+if(number0(Pixely - 6,pixelx - 717) = '1') then --- PixelY- 401,pixelX-161, size of image is 401 and 161 | kendi i�inde iterasyon i�in
+rin <= "1100"; gin <= "0000"; bin <= "1100"; else
+rin <= "0000"; gin <= "0000"; bin <= "0000"; end if;
+elsif selectchar32 = 1 then
+if(number1(Pixely - 6,pixelx - 717) = '1') then --- PixelY- 401,pixelX-161, size of image is 401
+and 161 | kendi i�inde iterasyon i�in rin <= "1100";
+gin <= "0000"; bin <= "1100"; else
+rin <= "0000"; gin <= "0000"; bin <= "0000"; end if;
+elsif selectchar32 = 2 then
+
+if(number2(Pixely - 6,pixelx - 717) = '1') then --- PixelY- 401,pixelX-161, size of image is 401 and 161 | kendi i�inde iterasyon i�in
+rin <= "1100"; gin <= "0000"; bin <= "1100"; else
+rin <= "0000"; gin <= "0000"; bin <= "0000"; end if;
+elsif selectchar32 = 3 then
+if(number3(Pixely - 6,pixelx - 717) = '1') then --- PixelY- 401,pixelX-161, size of image is 401
+and 161 | kendi i�inde iterasyon i�in rin <= "1100";
+gin <= "0000"; bin <= "1100"; else
+rin <= "0000"; gin <= "0000"; bin <= "0000"; end if;
+elsif selectchar32 = 4 then
+if(number4(Pixely - 6,pixelx - 717) = '1') then --- PixelY- 401,pixelX-161, size of image is 401
+and 161 | kendi i�inde iterasyon i�in rin <= "1100";
+gin <= "0000"; bin <= "1100"; else
+rin <= "0000"; gin <= "0000"; bin <= "0000"; end if;
+elsif selectchar32 = 5 then
+if(number5(Pixely - 6,pixelx - 717) = '1') then --- PixelY- 401,pixelX-161, size of image is 401
+and 161 | kendi i�inde iterasyon i�in rin <= "1100";
+gin <= "0000"; bin <= "1100"; else
+rin <= "0000"; gin <= "0000"; bin <= "0000"; end if;
+elsif selectchar32 = 6 then
+if(number6(Pixely - 6,pixelx - 717) = '1') then --- PixelY- 401,pixelX-161, size of image is 401
+and 161 | kendi i�inde iterasyon i�in rin <= "1100";
+gin <= "0000"; bin <= "1100"; else
+
+rin <= "0000"; gin <= "0000"; bin <= "0000"; end if;
+elsif selectchar32 = 7 then
+if(number7(Pixely - 6,pixelx - 717) = '1') then --- PixelY- 401,pixelX-161, size of image is 401
+and 161 | kendi i�inde iterasyon i�in rin <= "1100";
+gin <= "0000"; bin <= "1100"; else
+rin <= "0000"; gin <= "0000"; bin <= "0000"; end if;
+elsif selectchar32 = 8 then
+if(number8(Pixely - 6,pixelx - 717) = '1') then --- PixelY- 401,pixelX-161, size of image is 401
+and 161 | kendi i�inde iterasyon i�in rin <= "1100";
+gin <= "0000"; bin <= "1100"; else
+rin <= "0000"; gin <= "0000"; bin <= "0000"; end if;
+elsif selectchar32 = 9 then
+if(number9(Pixely - 6,pixelx - 717) = '1') then --- PixelY- 401,pixelX-161, size of image is 401
+and 161 | kendi i�inde iterasyon i�in rin <= "1100";
+gin <= "0000"; bin <= "1100"; else
+rin <= "0000"; gin <= "0000"; bin <= "0000"; end if;
+end if;
+elsif(pixel_x > 737 and pixel_x < 753 and pixel_y > 5 and pixel_y < 37) then -- 1st digit for vpp
+if mp3 = '0' then -- minus
+if(minussign(Pixely - 6,pixelx - 738) = '1') then --- PixelY- 401,pixelX-161, size of image is 401
+and 161 | kendi i�inde iterasyon i�in rin <= "1100";
+gin <= "0000"; bin <= "1100"; else
+rin <= "0000"; gin <= "0000"; bin <= "0000";
+
+end if; else
+if(plussign(Pixely - 6,pixelx - 738) = '1') then --- PixelY- 401,pixelX-161, size of image is 401 and 161 | kendi i�inde iterasyon i�in
+rin <= "1100"; gin <= "0000"; bin <= "1100"; else
+rin <= "0000"; gin <= "0000"; bin <= "0000"; end if;
+end if;
+elsif(pixel_x > 10 and pixel_x < 163 and pixel_y > 5 and pixel_y < 38) then --singleplayer yaz�s� if(vppString(Pixely - 6,pixelx - 11) = '0') then --- PixelY- 401,pixelX-161, size of image is 401 and
+161 | kendi i�inde iterasyon i�in rin <= "0000";
+gin <= "0000";
+bin <= "0000"; else
+rin <= "1111"; gin <= "1111"; bin <= "0000";
+end if;
+elsif(pixel_x > 250 and pixel_x < 403 and pixel_y > 5 and pixel_y < 38) then --singleplayer yaz�s� if(vmaxString(Pixely - 6,pixelx - 251) = '0') then --- PixelY- 401,pixelX-161, size of image is 401
+and 161 | kendi i�inde iterasyon i�in rin <= "0000";
+gin <= "0000"; bin <= "0000"; else
+rin <= "1111";
+elsif(pixel_x > 490 and pixel_x < 643 and pixel_y > 5 and pixel_y < 38) then --singleplayer yaz�s� if(vminString(Pixely - 6,pixelx - 491) = '0') then --- PixelY- 401,pixelX-161, size of image is 401
+and 161 | kendi i�inde iterasyon i�in rin <= "0000";
+gin <= "0000"; bin <= "0000"; else
+rin <= "1111"; gin <= "1111";
+
+end if; else
+end if;
+end if;
+end process;
+rin <= (others => 'Z'); gin <=(others => 'Z'); bin <= (others => 'Z');
+bin <= "0000";
+gin <= "1111"; bin <= "0000";
+end if; end Behavioral;
+      
 
