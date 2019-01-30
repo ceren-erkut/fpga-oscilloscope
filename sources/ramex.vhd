@@ -2,16 +2,16 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.all; 
 use IEEE.Numeric_Std.all;
 
-entity ramex is port (clock : in std_logic;
+entity data_ram is port (clock : in std_logic;
                       eoc_out : in std_logic;
                       write_address : in std_logic_vector(11 downto 0); 
                       read_address : in std_logic_vector(11 downto 0);
                       reading : in std_logic_vector(11 downto 0);
                       dataout : out std_logic_vector(8 downto 0) -- y axis pixel value
                      );
-end entity ramex;
+end entity data_ram;
 
-architecture Behavioral of ramex is
+architecture Behavioral of data_ram is
 
 type ram_type is array (0 to 4095) of std_logic_vector(8 downto 0); 
 signal ram : ram_type;
