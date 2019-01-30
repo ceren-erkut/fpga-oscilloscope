@@ -143,42 +143,53 @@ u6: xadc_wiz_0 port map (write_address => write_add,
                          do_out(15 downto 4) => reading(11 downto 0),
                          do_out(3 downto 0) => led(15 downto 12),
                          drdy_out => open,
+                         dclk_in=> clk_signal,
+                         reset_in => '0',
+                         vauxp14=> adc(0),-- channel 14
+                         vauxn14 => adc(1),
+                         busy_out =>open, 
+                         channel_out => open, 
+                         eoc_out => eoc, 
+                         eos_out => open, 
+                         alarm_out => open, 
+                         vp_in => '0',
+                         vn_in => '0');
+                         
+u8: bintodec port map (reading => reading, 
+                       clk => clk_signal, 
+                       mp1 =>mp1,
+                       mp2 =>mp2,
+                       mp3 =>mp3,
+                       selectchar11 => selectchar11, 
+                       selectchar12 => selectchar12, 
+                       selectchar21 => selectchar21, 
+                       selectchar22 => selectchar22, 
+                       selectchar31 => selectchar31, 
+                       selectchar32 => selectchar32);
+                         
+u11: keyboard port map(ps2_clk => ps2_clk,
+                       ps2_data => ps2_data,
+                       clk => halfclock,
+                       userlevel => trig_level); --userlevell
+                         
+u4: Vga1 port map(clk => clk_signal, 
+                  Rin => Rin,
+                  Bin => Bin, 
+                  Gin => Gin,
+                  Hsync => Hsync, 
+                  Vsync => Vsync,
+                  display => displayy,
+                  Halfclock => Halfclock,
+                  VgaR => VgaR, VgaB => VgaB, VgaG => VgaG, 
+                  pixel_X => pixel_X, pixel_Y => pixel_Y);
+                         
+u5: font_rom port map(display => displayy,
+                      Halfclock => Halfclock,
+                      Rin => Rin, Bin => Bin, Gin => Gin,
+                      pixel_X => pixel_X, pixel_Y => pixel_Y,
+                      selectedY => selectpixY, selectedX => selectpixX,
+                      userlevel => userlevell,
+                      mp1 =>mp1, mp2 =>mp2, mp3 =>mp3,
+                      selectchar11 => selectchar11, selectchar12 => selectchar12, selectchar21 => selectchar21, selectchar22 => selectchar22, selectchar31 => selectchar31, selectchar32 => selectchar32);
 
-dclk_in
-reset_in
-vauxp14
-vauxn14
-busy_out =>open, channel_out => open, eoc_out => eoc, eos_out => open, alarm_out => open, vp_in => '0',
-vn_in => '0' );
-u8: bintodec port map (
-reading => reading, clk => clk_signal, mp1 =>mp1,
-mp2 =>mp2,
-mp3 =>mp3,
-selectchar11 => selectchar11, selectchar12 => selectchar12, selectchar21 => selectchar21, selectchar22 => selectchar22, selectchar31 => selectchar31, selectchar32 => selectchar32
-);
-u11: keyboard
-port map(
-ps2_clk => ps2_clk,
-ps2_data => ps2_data,
-clk => halfclock,
-userlevel => trig_level --userlevell );
-u4: Vga1
-port map(clk => clk_signal, Rin => Rin,
-Bin => Bin, Gin => Gin,
-Hsync => Hsync, Vsync => Vsync,
-display => displayy,
-Halfclock => Halfclock,
-VgaR => VgaR, VgaB => VgaB, VgaG => VgaG, pixel_X => pixel_X, pixel_Y => pixel_Y);
-u5: font_rom
-port map(display => displayy,
-=> clk_signal, => '0',
-=> adc(0),---------------------- channel 14 => adc(1),
-Halfclock => Halfclock,
-
-Rin => Rin, Bin => Bin, Gin => Gin,
-pixel_X => pixel_X, pixel_Y => pixel_Y,
-selectedY => selectpixY, selectedX => selectpixX,
-userlevel => userlevell,
-mp1 =>mp1, mp2 =>mp2, mp3 =>mp3,
-selectchar11 => selectchar11, selectchar12 => selectchar12, selectchar21 => selectchar21, selectchar22 => selectchar22, selectchar31 => selectchar31, selectchar32 => selectchar32);
 end Behavioral;
