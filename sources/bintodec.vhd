@@ -92,14 +92,9 @@ begin
       selectchar32 <= p-(10*r); 
     else
       selectchar32 <= (10*r)-p; 
-    end if;
-      
+    end if;    
 end if;
   
 end process;
   
 end Behavioral;      
-      
-      
-      
-      
