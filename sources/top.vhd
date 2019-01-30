@@ -5,7 +5,6 @@ use IEEE.std_logic_unsigned.all;
 entity Top is
 
 Port (clk : in STD_LOGIC;
-      clockout : out STD_LOGIC;
       adc : in std_logic_vector(1 downto 0); 
       Hsync, Vsync : out std_logic;
       led : out std_logic_vector(15 downto 0);
@@ -15,10 +14,6 @@ Port (clk : in STD_LOGIC;
 end Top;
 
 architecture Behavioral of Top is
-      
-component clk_div is Port (clkin : in std_logic;
-                        clkout : out std_logic ); 
-end component; 
       
 component keyboard is port (clk: in std_logic;
                         ps2_clk : IN STD_LOGIC;
@@ -106,7 +101,7 @@ signal selectchar11 : integer; signal selectchar12 : integer; signal selectchar2
 signal mp1: std_logic; signal mp2: std_logic; signal mp3: std_logic;
 signal reading: std_logic_vector(11 downto 0); signal Halfclock : std_logic; signal displayy : std_logic;
 signal Rin, Bin, Gin : std_logic_vector(3 downto 0); signal pixel_X : std_logic_vector(10 downto 0); signal pixel_Y : std_logic_vector(9 downto 0); signal eoc: std_logic:= '1';
-signal triggered: std_logic; signal ps2_clkkk: std_logic; signal clk_signal: std_logic; signal clockoutt: std_logic;
+signal triggered: std_logic; signal clk_signal: std_logic; 
 signal write_add: std_logic_vector(11 downto 0);
 signal dataout : std_logic_vector(8 downto 0); -- y axis pixel value
 signal trig_level : integer:=0; signal read_add: std_logic_vector(11 downto 0);
@@ -119,10 +114,7 @@ begin
                          
 led(11 downto 0) <= reading(11 downto 0); 
 clk_signal <= clk;
-clockout <= clockoutt;
                          
-u1: clk_div port map(clkin => clk_signal,
-                     clkout => clockoutt); 
 u3: ramex port map (clock => clk_signal, 
                     write_address => write_add, 
                     read_address => read_add, 
