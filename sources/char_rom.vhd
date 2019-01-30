@@ -3,7 +3,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.std_logic_unsigned.all; 
 use ieee.numeric_std.ALL;
 
-entity font_rom is Port (selectchar11: in integer; 
+entity char_rom is Port (selectchar11: in integer; 
                          selectchar12: in integer; 
                          selectchar21: in integer; 
                          selectchar22: in integer; 
@@ -18,9 +18,9 @@ entity font_rom is Port (selectchar11: in integer;
                          pixel_Y : in std_logic_vector(9 downto 0); 
                          selectedY : in std_logic_vector(8 downto 0); 
                          selectedX: in std_logic_vector(9 downto 0));
-end font_rom;
+end char_rom;
   
-architecture Behavioral of font_rom is
+architecture Behavioral of char_rom is
 
 type meas1 is array (0 to 32, 0 to 152) of std_logic; 
 type meas2 is array (0 to 32, 0 to 152) of std_logic; 
