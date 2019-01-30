@@ -43,7 +43,7 @@ component trigger is port (eoc_clock: in std_logic;
 
 end component; 
                          
-component xadc_wiz_0 is port (write_address : out std_logic_vector(11 downto 0);
+component xadc is port (write_address : out std_logic_vector(11 downto 0);
                               daddr_in : in STD_LOGIC_VECTOR (6 downto 0); -- Address bus for the dynamic reconfiguration port
                               den_in : in STD_LOGIC; -- Enable Signal for the dynamic reconfiguration port
                               di_in : in STD_LOGIC_VECTOR (15 downto 0); -- Input data bus for the dynamic reconfiguration port
@@ -135,7 +135,7 @@ u7: trigger port map (eoc_clock => eoc,
                       datain=> dataout, 
                       trig_level=> trig_level,
                       read_address => read_add);
-u6: xadc_wiz_0 port map (write_address => write_add, 
+u6: xadc port map (write_address => write_add, 
                          daddr_in => "0011110",
                          den_in=> eoc,
                          di_in=> (others => '0'),
