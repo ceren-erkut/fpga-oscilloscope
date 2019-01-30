@@ -8,20 +8,12 @@ Port (clk : in STD_LOGIC;
       adc : in std_logic_vector(1 downto 0); 
       Hsync, Vsync : out std_logic;
       led : out std_logic_vector(15 downto 0);
-      ps2_clk : IN STD_LOGIC;
-      ps2_data : IN STD_LOGIC;
       vgaR, vgaB, vgaG : out std_logic_vector(3 downto 0));
 end Top;
 
 architecture Behavioral of Top is
       
-component keyboard is port (clk: in std_logic;
-                        ps2_clk : IN STD_LOGIC;
-                        ps2_data : IN STD_LOGIC; 
-                        userlevel : out integer);
-end component;
-      
-component ramex is port (clock : in std_logic; 
+component data_ram is port (clock : in std_logic; 
                          eoc_out : in std_logic;
                          write_address : in std_logic_vector(11 downto 0); 
                          read_address : in std_logic_vector(11 downto 0);
@@ -29,7 +21,6 @@ component ramex is port (clock : in std_logic;
 end component; 
                          
 component trigger is port (eoc_clock: in std_logic;
-                           --triggered: out std_logic;
                            xlevel : out std_logic_vector(9 downto 0); -- goes to display 
                            ylevel : out std_logic_vector(8 downto 0); -- goes to display 
                            datain : in std_logic_vector(8 downto 0); -- comes from ramex
@@ -66,7 +57,7 @@ component Vga1 Port (clk : in STD_LOGIC;
                      pixel_Y : out std_logic_vector(9 downto 0));
 end component;
                          
-component font_rom Port (mp1: in std_logic;
+component char_rom Port (mp1: in std_logic;
                          mp2: in std_logic;
                          mp3: in std_logic; 
                          selectchar11: in integer; 
@@ -115,7 +106,7 @@ begin
 led(11 downto 0) <= reading(11 downto 0); 
 clk_signal <= clk;
                          
-u3: ramex port map (clock => clk_signal, 
+u3: data_ram port map (clock => clk_signal, 
                     write_address => write_add, 
                     read_address => read_add, 
                     eoc_out => eoc,
@@ -175,7 +166,7 @@ u4: Vga1 port map(clk => clk_signal,
                   VgaR => VgaR, VgaB => VgaB, VgaG => VgaG, 
                   pixel_X => pixel_X, pixel_Y => pixel_Y);
                          
-u5: font_rom port map(display => displayy,
+u5: char_rom port map(display => displayy,
                       Halfclock => Halfclock,
                       Rin => Rin, Bin => Bin, Gin => Gin,
                       pixel_X => pixel_X, pixel_Y => pixel_Y,
