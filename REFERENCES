@@ -1,0 +1,4 @@
+Some parts of the codes may belong to the sources referred below.
+
+https://www.instructables.com/id/BASYS-3-Flow-Metering-ANALOG-TO-DIGITAL-Using-Vhdl/
+https://github.com/Digilent/Basys3/blob/master/Projects/XADC_Demo/src/constraints/Basys3_Master.xdc
